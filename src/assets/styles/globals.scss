@@ -1,0 +1,23 @@
+// Imports
+@import 'vars';
+@import 'components/wrapper';
+@import 'components/shape';
+
+// Generals
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary-font;
+}
+
+body {
+    padding: 2rem;
+    min-height: 100vh;
+    height: 100%;
+    max-height: 100vh;
+    color: $white-color;
+    background-color: $black-color;
+}

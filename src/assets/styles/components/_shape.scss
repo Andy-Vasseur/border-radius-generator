@@ -1,0 +1,131 @@
+$animation-duration: 300ms;
+
+// Keyframes
+@keyframes codeCopied {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+}
+
+.Shape {
+
+    &__settings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__inputs {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 2rem 0;
+            width: 50%;
+
+            &__topLeft,
+            &__topRight,
+            &__bottomLeft,
+            &__bottomRight {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin: .5rem 0;
+                    font-size: 1.2rem;
+                }
+
+                input {
+                    margin: .5rem 0;
+                    padding: 1rem;
+                    width: 70%;
+                    color: $white-color;
+                    border: none;
+                    border-radius: 25px;
+                    letter-spacing: .1rem;
+                    outline: none;
+                    background-color: #252525;
+                }
+            }
+        }
+
+        &__shape {
+            width: 50%;
+
+            &__preview {
+                margin: 2rem auto;
+                width: 320px;
+                height: 320px;
+                background-color: #6b40d1;
+            }
+        }
+    }
+
+    &__cssCode {
+        position: relative;
+        margin-top: 6rem;
+
+        label {
+            margin: .5rem 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        textarea {
+            resize: none;
+            padding: 1rem;
+            color: $white-color;
+            border: none;
+            line-height: 1.5;
+            font-size: 1.1rem;
+            background-color: $black-color;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__cssCopy {
+            position: absolute;
+            right: 0;
+            bottom: -2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            button {
+                align-self: flex-end;
+                margin-bottom: 1rem;
+                padding: 1rem 2rem;
+                color: $white-color;
+                width: 207px;
+                border: none;
+                border-radius: 25px;
+                letter-spacing: .1rem;
+                outline: none;
+                background-color: #252525;
+                transition: all 300ms ease;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #6b40d1;
+                }
+            }
+
+            span {
+                font-size: 1.2rem;
+                font-weight: 600;
+                animation: codeCopied 300ms ease;
+            }
+        }
+    }
+}
