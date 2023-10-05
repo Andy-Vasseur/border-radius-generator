@@ -7,6 +7,7 @@ function Shape() {
     const [bottomRight, setBottomRight] = useState('');
     const [bottomLeft, setBottomLeft] = useState('');
     const textareaRef = useRef(null);
+    // eslint-disable-next-line no-unused-vars
     const [isButtonClicked, setIsButtonClicked] = useState(false);
     const [isCopied, setIsCopied] = useState(false);
 

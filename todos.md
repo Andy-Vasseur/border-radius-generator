@@ -1,0 +1,10 @@
+- [ ] Responsive for all formats
+  - [ ] Small mobiles
+  - [ ] Large mobiles
+  - [ ] Tablets, iPads
+  - [ ] Laptops, small screens
+  - [ ] Desktops, large screens
+  - [ ] Extra large screens, TV
+- [ ] Better Performance, Accessibility, Best Practices and SEO
+- [ ] Better design
+- [ ] Fix the message and animation on the copy button
